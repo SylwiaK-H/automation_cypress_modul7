@@ -3,7 +3,7 @@ import Urls from "./urls"
 const inputsHeader = '#inputs-header'
 const checkboxHeader = '#checkbox-header'
 const inputHeader = '#input-header'
-const dropdownListTabHeader = '#dropdown-list-header'
+const dropdownListTabHeader = '#dropdownlist-header'
 const hoversHeader = '#hovers-header'
 
 
