@@ -12,7 +12,7 @@ import KeyPressesPage from "../page-objects/keyPressesPage"
 import DragAndDopPage from "../page-objects/dragAndDropPage"
 import DatePickerPage from "../page-objects/datePickerPage"
 
-
+const homePage = new HomePage()
 
 describe('my first scenario', () => {
 
@@ -22,7 +22,6 @@ describe('my first scenario', () => {
 
     it('test inputs', function () {
 
-        const homePage = new HomePage()
         homePage.clikInputstab()
 
         const inputPage = new InputPage()
@@ -33,7 +32,6 @@ describe('my first scenario', () => {
 
     it('test checbox', function () {
 
-        const homePage = new HomePage();
         homePage.clikCheckboxTab()
 
         const checkboxPage = new CheckboxPage();
@@ -43,7 +41,6 @@ describe('my first scenario', () => {
 
     it('test dropdown list', function () {
 
-        const homePage = new HomePage();
         homePage.clikDropdownListTab()
 
         const dropdownPage = new DropdownListPage();
@@ -52,7 +49,6 @@ describe('my first scenario', () => {
 
     it('test hovers', function () {
 
-        const homePage = new HomePage()
         homePage.clikHoversTab()
 
         const hoversPage = new HoversPage()
@@ -61,7 +57,6 @@ describe('my first scenario', () => {
 
     it('test add and remove elements', () => {
 
-        const homePage = new HomePage()
         homePage.clickAddAndRemoveElementsHeader()
 
         const addElementPage = new AddRemoveElementsPage();
@@ -72,7 +67,6 @@ describe('my first scenario', () => {
 
     it('test basic auth', () => {
 
-        const homePage = new HomePage()
         homePage.clickBasicAuthHeader()
 
         const basicAuthPage = new BasicAuthPage();
@@ -84,7 +78,6 @@ describe('my first scenario', () => {
 
     it('test form', () => {
 
-        const homePage = new HomePage()
         homePage.clickFormHeader()
 
         const formPage = new FormPage();
@@ -96,7 +89,6 @@ describe('my first scenario', () => {
 
     it('test iFrame buttons', () => {
 
-        const homePage = new HomePage()
         homePage.clickiFrameHeader()
 
         const iFrame = new iFramePage();
@@ -106,7 +98,6 @@ describe('my first scenario', () => {
 
     it('test status codes', () => {
 
-        const homePage = new HomePage();
         homePage.clickStatusCodeHeader()
 
         const statusCode = new StatusCodePage();
@@ -119,7 +110,6 @@ describe('my first scenario', () => {
 
     it('test key presses form', () => {
 
-        const homePage = new HomePage();
         homePage.clickKeyPressesHeader()
 
         const keyPressesPage = new KeyPressesPage();
@@ -129,7 +119,6 @@ describe('my first scenario', () => {
 
     it('test drag and drop', ()=>{
 
-        const homePage = new HomePage();
         homePage.clickDragAndDropHeader()
 
         const dragAndDrop = new DragAndDopPage();
@@ -139,7 +128,6 @@ describe('my first scenario', () => {
 
     it('test date picker', ()=>{
 
-        const homePage = new HomePage();
         homePage.clickDatePickerHeader()
 
         const datePicker = new DatePickerPage();
