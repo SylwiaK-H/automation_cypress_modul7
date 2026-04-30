@@ -12,9 +12,10 @@ import KeyPressesPage from "../page-objects/keyPressesPage"
 import DragAndDopPage from "../page-objects/dragAndDropPage"
 import DatePickerPage from "../page-objects/datePickerPage"
 
-const homePage = new HomePage()
+
 
 describe('my first scenario', () => {
+    const homePage = new HomePage();
 
     beforeEach (() => {
       cy.visit('/');  
